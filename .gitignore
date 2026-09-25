@@ -1,0 +1,27 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.tox/
+*.egg-info/
+dist/
+build/
+
+# --- Environnement virtuel ---
+.venv/
+
+# --- Secrets ---
+.env
+*.json
+
+# --- Données : on ignore le contenu mais on garde l'arborescence ---
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# --- Éditeur / système ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
