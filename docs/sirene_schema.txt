@@ -1,0 +1,78 @@
+Lignes : 30020346
+
+=== SCHÉMA ===
+siren: string
+statutDiffusionUniteLegale: string
+unitePurgeeUniteLegale: bool
+dateCreationUniteLegale: date32[day]
+sigleUniteLegale: string
+sexeUniteLegale: string
+prenom1UniteLegale: string
+prenom2UniteLegale: string
+prenom3UniteLegale: string
+prenom4UniteLegale: string
+prenomUsuelUniteLegale: string
+pseudonymeUniteLegale: string
+identifiantAssociationUniteLegale: string
+trancheEffectifsUniteLegale: string
+anneeEffectifsUniteLegale: int64
+dateDernierTraitementUniteLegale: timestamp[us]
+nombrePeriodesUniteLegale: int64
+categorieEntreprise: string
+anneeCategorieEntreprise: int64
+dateDebut: date32[day]
+etatAdministratifUniteLegale: string
+nomUniteLegale: string
+nomUsageUniteLegale: string
+denominationUniteLegale: string
+denominationUsuelle1UniteLegale: string
+denominationUsuelle2UniteLegale: string
+denominationUsuelle3UniteLegale: string
+categorieJuridiqueUniteLegale: int64
+activitePrincipaleUniteLegale: string
+nomenclatureActivitePrincipaleUniteLegale: string
+nicSiegeUniteLegale: string
+economieSocialeSolidaireUniteLegale: string
+societeMissionUniteLegale: string
+caractereEmployeurUniteLegale: string
+activitePrincipaleNAF25UniteLegale: string
+
+=== APERÇU ===
+                                                             0  ...                    4
+siren                                                000325175  ...            005410394
+statutDiffusionUniteLegale                                   O  ...                    O
+unitePurgeeUniteLegale                                    None  ...                 True
+dateCreationUniteLegale                             2000-09-26  ...           1954-12-25
+sigleUniteLegale                                           NaN  ...                  NaN
+sexeUniteLegale                                              M  ...                    M
+prenom1UniteLegale                                     THIERRY  ...               ROBERT
+prenom2UniteLegale                                         NaN  ...               ALFRED
+prenom3UniteLegale                                         NaN  ...                  NaN
+prenom4UniteLegale                                         NaN  ...                  NaN
+prenomUsuelUniteLegale                                 THIERRY  ...               ROBERT
+pseudonymeUniteLegale                                      NaN  ...                  NaN
+identifiantAssociationUniteLegale                          NaN  ...                  NaN
+trancheEffectifsUniteLegale                                 NN  ...                   NN
+anneeEffectifsUniteLegale                                  NaN  ...                  NaN
+dateDernierTraitementUniteLegale           2025-12-06 10:43:55  ...  2024-03-22 14:26:06
+nombrePeriodesUniteLegale                                    6  ...                    1
+categorieEntreprise                                        PME  ...                  NaN
+anneeCategorieEntreprise                                2023.0  ...                  NaN
+dateDebut                                           2018-02-07  ...           1987-12-01
+etatAdministratifUniteLegale                                 A  ...                    C
+nomUniteLegale                                         JANOYER  ...                DAULT
+nomUsageUniteLegale                                        NaN  ...                  NaN
+denominationUniteLegale                                    NaN  ...                  NaN
+denominationUsuelle1UniteLegale                            NaN  ...                  NaN
+denominationUsuelle2UniteLegale                            NaN  ...                  NaN
+denominationUsuelle3UniteLegale                            NaN  ...                  NaN
+categorieJuridiqueUniteLegale                             1000  ...                 1000
+activitePrincipaleUniteLegale                           32.12Z  ...                64.42
+nomenclatureActivitePrincipaleUniteLegale              NAFRev2  ...                  NAP
+nicSiegeUniteLegale                                      00065  ...                00018
+economieSocialeSolidaireUniteLegale                        NaN  ...                  NaN
+societeMissionUniteLegale                                  NaN  ...                  NaN
+caractereEmployeurUniteLegale                              NaN  ...                  NaN
+activitePrincipaleNAF25UniteLegale                      32.12Y  ...                  NaN
+
+[35 rows x 5 columns]

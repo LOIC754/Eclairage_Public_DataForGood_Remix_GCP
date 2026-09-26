@@ -1,0 +1,23 @@
+# Source Sirene : unités légales (INSEE), stock mensuel au format Parquet
+sirene:
+  url: "https://www.data.gouv.fr/api/1/datasets/r/350182c9-148a-46e0-8389-76c2ec1374a3"
+  raw_dir: "data/raw/sirene"
+  raw_filename: "StockUniteLegale.parquet"
+  output_filename: "sirene_collectivites.parquet"
+
+  # Colonnes utiles uniquement (sélection explicite = robuste aux évolutions de schéma)
+  columns:
+    - siren                          # identifiant pivot pour toutes les jointures
+    - nicSiegeUniteLegale            # siren + nic = SIRET du siège
+    - denominationUniteLegale        # nom officiel de la collectivité
+    - sigleUniteLegale
+    - categorieJuridiqueUniteLegale  # type de collectivité (filtre)
+    - activitePrincipaleUniteLegale
+    - etatAdministratifUniteLegale   # A = actif, C = cessé (filtre)
+    - dateCreationUniteLegale
+
+  # Collectivités territoriales et intercommunalités à fiscalité propre
+  categories_juridiques: [7210, 7220, 7225, 7229, 7230, 7343, 7344, 7346, 7348]
+
+  # On ne garde que les unités actives
+  etat_actif: "A"
